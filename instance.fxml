@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<GridPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerInstance">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <AnchorPane fx:id="anchor1" prefHeight="500.0" prefWidth="600.0" stylesheets="@style.css">
+         <children>
+            <Text fx:id="textClause" layoutX="263.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="217.13671875" />
+            <Label layoutX="90.0" layoutY="349.0" prefHeight="27.0" prefWidth="146.0" text="moyenne claus satisfied " />
+            <Label layoutX="84.0" layoutY="394.0" prefHeight="17.0" prefWidth="133.0" text="best solution found" />
+            <Label layoutX="104.0" layoutY="28.0" prefHeight="18.0" prefWidth="103.0" text="the file chossen" />
+            <Text fx:id="textFile" layoutX="263.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="103.0" />
+            <Text fx:id="textBest" layoutX="263.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="85.98307228088379" />
+            <TableView fx:id="tableOneClause" blendMode="MULTIPLY" layoutX="63.0" layoutY="82.0" opacity="0.79" prefHeight="251.0" prefWidth="452.0" stylesheets="@../style.css">
+              <columns>
+                  <TableColumn fx:id="colRates" prefWidth="66.0" text="gain" />
+                <TableColumn fx:id="colTimes" prefWidth="83.0" text="time" />
+                  <TableColumn fx:id="tableInstances" prefWidth="123.0" text="file" />
+              </columns>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
